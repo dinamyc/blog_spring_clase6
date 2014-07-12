@@ -194,6 +194,22 @@
 			<version>2.2</version>
 		</dependency>
 
+		<!-- ESTA DEPENDENCIA ES NECESARIA PARA EL POOL DE CONEXIONES -->
+
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+
+
+<!-- libreria par driver  -->
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901.jdbc4</version>
+		</dependency>
 
 
 
@@ -237,8 +253,8 @@
 		</plugins>
 	</build>
 	<profiles>
-	
-	<profile>
+
+		<profile>
 			<id>openshift</id>
 			<build>
 				<finalName>spring-test</finalName>
@@ -255,18 +271,18 @@
 				</plugins>
 			</build>
 		</profile>
-	
+
 	</profiles>
-	
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
 </project>
